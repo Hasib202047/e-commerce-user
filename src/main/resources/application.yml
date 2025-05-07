@@ -1,0 +1,18 @@
+server:
+  port: 8002
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: @project.artifactId@
+    version: @project.version@
+  main:
+    web-application-type: servlet
+  banner:
+    charset: UTF-8
+    location: banner.txt
+
+jwt:
+  secret : Y2FzYW5vYmxlLXNlY3JldC1rZXktZm9yLWp3dC1oYTUxMi1hdXRoZW50aWNhdGlvbi1zeXN0ZW0tMjAyNQ==
+  expiration : 3600000
